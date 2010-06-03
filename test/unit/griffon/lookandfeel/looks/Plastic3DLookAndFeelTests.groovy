@@ -14,24 +14,13 @@
  * limitations under the License.
  */
 
+package griffon.lookandfeel.looks
+
+import griffon.lookandfeel.AbstractLookAndFeelTestCase
+
 /**
  * @author Andres Almiray
  */
-class LookandfeelJgoodiesLooksGriffonPlugin {
-    def version = 0.1
-    def griffonVersion = '0.3.2 > *'
-    def dependsOn = [lookandfeel: 0.1]
-    def toolkits = ['swing']
-    def license = 'Apache Software License 2.0'
-
-    def author = 'Andres Almiray'
-    def authorEmail = 'aalmiray@users.sourceforge.net'
-    def title = 'JGoodies Swing Look & Feel'
-    def description = '''
-JGoodies Swing Look & Feel.
-'''
-
-    // URL to the plugin's documentation
-    def documentation = 'http://griffon.codehaus.org/Lookandfeel+JgoodiesLooks+Plugin'
+class Plastic3DLookAndFeelTests extends AbstractLooksLookAndFeelTestCase {
+    String getLookAndFeelProvider() { 'JGoodies - Plastic3D' }
 }
-
