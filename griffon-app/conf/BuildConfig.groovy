@@ -4,12 +4,9 @@ griffon.project.dependency.resolution = {
     repositories {
         griffonHome()
         mavenCentral()
-        String basePath = pluginDirPath? "${pluginDirPath}/" : ''
-        flatDir name: "lookAndFeelJgoodiesLooksLibDir", dirs: ["${basePath}lib"]
     }
     dependencies {
-        compile 'com.jgoodies:jgoodies-looks:2.5.0',
-                'com.jgoodies:jgoodies-common:1.3.0'
+        compile 'com.jgoodies:jgoodies-looks:2.5.2'
     }
 }
 
